@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>İyi ki Doğdun Sema ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<!-- Açılış -->
+
+<section id="intro">
+
+<div class="cake">
+
+🎂
+
+</div>
+
+<h1 class="birthday">
+
+Doğum Günün Kutlu Olsun Sevgilim ❤️
+
+</h1>
+
+<p class="loading">
+
+Senin için küçük bir sürpriz hazırlanıyor...
+
+</p>
+
+</section>
+
+<!-- Dosya -->
+
+<section id="folderSection">
+
+<div class="folder">
+
+<div class="folder-top">
+
+⚖️ GİZLİ DOSYA
+
+</div>
+
+<div class="folder-body">
+
+<h1>
+
+SEMA
+
+</h1>
+
+<h3>
+
+Dosya No : 2026 / AŞK
+
+</h3>
+
+<p id="typeText">
+
+</p>
+
+<div class="buttons">
+
+<button onclick="showMessage(1)">
+❤️ Bana Tıkla
+</button>
+
+<button onclick="showMessage(2)">
+⚖️ Mahkeme Kararı
+</button>
+
+<button onclick="showMessage(3)">
+🌹 Bir Mesaj Daha
+</button>
+
+<button onclick="showMessage(4)">
+🎁 Sürpriz
+</button>
+
+<button onclick="showMessage(5)">
+✨ Gelecek
+</button>
+
+<button onclick="showMessage(6)">
+💛 Kalbim
+</button>
+
+<button onclick="showMessage(7)">
+📖 Hayatımız
+</button>
+
+<button onclick="showMessage(8)">
+🌙 Sonsuza Kadar
+</button>
+
+</div>
+
+<div id="messageBox">
+
+Butonlardan birine tıkla ❤️
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div id="hearts"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

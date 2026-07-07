@@ -1,0 +1,189 @@
+// 3 saniye sonra giriş ekranını kapat
+
+setTimeout(() => {
+
+document.getElementById("intro").style.display="none";
+
+document.getElementById("folderSection").style.display="flex";
+
+typeWriter();
+
+startHearts();
+
+},3000);
+
+
+// Daktilo yazısı
+
+const text = `Bugün senin günün
+
+İyi ki doğdun güzelim
+
+Hayatımın en güzel parçası olduğun için sana ne kadar teşekkür etsem az
+
+Hayalini kurduğun avukatlık cübbesini bir gün gururla giyeceğine bütün kalbimle inanıyorum
+
+Adalet dağıtırken seni izlemek benim için dünyanın en büyük gururu olacak
+
+Başarıların her geçen gün artsın
+
+Yüzündeki gülümseme hiç eksik olmasın
+
+İyi ki varsın
+
+İyi ki benim sevgilimsin
+
+Seni çok seviyorum ❤️`;
+
+let i = 0;
+
+function typeWriter(){
+
+if(i < text.length){
+
+document.getElementById("typeText").innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,40);
+
+}
+
+}
+
+
+
+// Buton Mesajları
+
+function showMessage(id){
+
+const box=document.getElementById("messageBox");
+
+switch(id){
+
+case 1:
+
+box.innerHTML="❤️ Sen benim hayatımın en güzel tesadüfüsün iyi ki doğdun güzelim";
+
+break;
+
+case 2:
+
+box.innerHTML="⚖️ Mahkeme Kararı<br><br>Yapılan incelemeler sonucunda Sema isimli şahsın ömür boyu mutlu olmasına ve sonsuza kadar çok sevilmesine oy birliği ile karar verilmiştir.";
+
+break;
+
+case 3:
+
+box.innerHTML="🌹 Sen güldüğünde dünya daha güzel oluyor bunu sakın unutma";
+
+break;
+
+case 4:
+
+box.innerHTML="🎁 En büyük dileğim her doğum gününü birlikte kutlamak";
+
+break;
+
+case 5:
+
+box.innerHTML="✨ Bir gün siyah cübbeni giydiğinde en önde seni alkışlayan kişi ben olacağım";
+
+break;
+case 6:
+
+box.innerHTML="💛 Seninle geçirdiğim her an benim için bir hediye. İyi ki hayatımdasın.";
+
+break;
+
+case 7:
+
+box.innerHTML="📖 Birlikte daha yazacağımız çok güzel hikayemiz var. Her sayfasında senin gülüşün olsun.";
+
+break;
+
+case 8:
+
+box.innerHTML="🌙 Seni bugün, yarın ve her zaman çok seveceğim. Doğum günün kutlu olsun sevgilim. ❤️";
+
+createHeartBurst();
+
+break;
+
+}
+
+}
+
+
+
+// Kalp yağmuru
+
+function startHearts(){
+
+setInterval(()=>{
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML=Math.random()>0.5 ? "💛" : "❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(20+Math.random()*25)+"px";
+
+heart.style.animationDuration=(4+Math.random()*3)+"s";
+
+document.getElementById("hearts").appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},7000);
+
+},300);
+
+}
+
+
+
+// Sürpriz kalpler
+
+function createHeartBurst(){
+
+for(let i=0;i<40;i++){
+
+setTimeout(()=>{
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="💛";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(25+Math.random()*30)+"px";
+
+heart.style.animationDuration=(3+Math.random()*2)+"s";
+
+document.getElementById("hearts").appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},5000);
+
+},i*70);
+
+}
+
+}
+
+
+
+// Konsola küçük sürpriz :)
+
+console.log("❤️ İyi ki doğdun Sema. Seni çok seven biri bu siteyi senin için hazırladı.");
