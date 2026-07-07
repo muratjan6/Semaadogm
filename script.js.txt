@@ -90,6 +90,7 @@ case 5:
 box.innerHTML="✨ Bir gün siyah cübbeni giydiğinde en önde seni alkışlayan kişi ben olacağım";
 
 break;
+
 case 6:
 
 box.innerHTML="💛 Seninle geçirdiğim her an benim için bir hediye. İyi ki hayatımdasın.";
